@@ -1,0 +1,14 @@
+# Environment
+.env
+
+# Dependencies
+node_modules/
+
+# Output (generated files — commit selectively if needed)
+# output/*.json is intentionally NOT ignored so menu.json can be previewed on GitHub Pages
+# Add the line below back when not demoing:
+# output/*.json
+output/catalog_raw.json
+
+# OS
+.DS_Store

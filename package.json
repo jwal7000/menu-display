@@ -1,0 +1,19 @@
+{
+  "name": "square-digital-menu-poc",
+  "version": "0.1.0",
+  "description": "Read-only POC: pulls Square location and catalog data to generate a menu.json for digital menu boards.",
+  "type": "module",
+  "scripts": {
+    "list-locations": "node src/listLocations.js",
+    "fetch-catalog": "node src/fetchCatalog.js",
+    "build-menu": "node src/buildMenu.js",
+    "preview": "serve . -p 3000 --no-clipboard"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "square": "^44.2.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "_comment": "Menu board display configuration for Five Daughters Bakery. Controls how Square catalog data is mapped and displayed. Edit this file to tune the menu — never modify Square catalog data directly.",
+
+  "location_id": "AX2YMJVN8QJ7C",
+  "location_display_name": "12th South",
+
+  "unavailable_items": {
+    "behavior": "show_as_sold_out",
+    "_comment": "Options: 'show_as_sold_out' (show item with a sold-out label) | 'hide' (remove from menu entirely)"
+  },
+
+  "sections": [
+    {
+      "name": "Hundred Layer Donuts",
+      "square_categories": ["Hundred Layer Donuts"],
+      "sort_order": 1
+    },
+    {
+      "name": "Mini Donuts",
+      "square_categories": ["Mini Hundred Layer Donuts"],
+      "sort_order": 2
+    },
+    {
+      "name": "Paleo Donuts",
+      "square_categories": ["Paleo"],
+      "sort_order": 3
+    },
+    {
+      "name": "Yeast Raised",
+      "square_categories": ["Yeast Raised Donuts"],
+      "sort_order": 4
+    },
+    {
+      "name": "Cinnamon Rolls",
+      "square_categories": ["Rolls"],
+      "sort_order": 5
+    },
+    {
+      "name": "Quinn",
+      "square_categories": ["Quinnamon/Quinn"],
+      "sort_order": 6
+    },
+    {
+      "name": "Cookies",
+      "square_categories": ["Cookies", "Cookie"],
+      "sort_order": 7
+    },
+    {
+      "name": "Pastries",
+      "square_categories": ["Pastries"],
+      "sort_order": 8
+    },
+    {
+      "name": "Breakfast",
+      "square_categories": ["Breakfast", "Savory"],
+      "sort_order": 9
+    },
+    {
+      "name": "Coffee",
+      "square_categories": ["Coffee", "Espresso Beverages"],
+      "sort_order": 10
+    },
+    {
+      "name": "Drinks",
+      "square_categories": ["Beverages"],
+      "sort_order": 11
+    }
+  ],
+
+  "hidden_item_keywords": [
+    "Blank",
+    "Unsellable",
+    "Spoilage",
+    "Waste",
+    "Wholesale",
+    "Discounted",
+    "FOR KIT",
+    "TEST",
+    "(Wholesale)"
+  ],
+
+  "hidden_variation_ids": [],
+
+  "display_name_overrides": {
+    "_comment": "Keyed by Square item_id. Overrides the item name shown on the menu board without changing Square.",
+    "_example": { "SQUARE_ITEM_ID_HERE": "Your Display Name Here" }
+  },
+
+  "price_overrides": {
+    "_comment": "Keyed by Square variation_id. Overrides the displayed price string. Does NOT change Square pricing.",
+    "_example": { "SQUARE_VARIATION_ID_HERE": "$4.50" }
+  },
+
+  "item_sort_overrides": {
+    "_comment": "Keyed by Square item_id. Lower number = higher position within its section. Items without an override sort alphabetically after pinned items.",
+    "_example": { "SQUARE_ITEM_ID_HERE": 1 }
+  }
+}
