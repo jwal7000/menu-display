@@ -4,6 +4,20 @@ Read-only proof of concept that pulls Square location and catalog data and conve
 
 ---
 
+> ⚠️ **MOCK DATA NOTICE**
+>
+> The current `output/menu.json` contains **placeholder mock data** for preview and demo purposes only.
+> It does **not** reflect the current Five Daughters Bakery July menu.
+>
+> To replace it with live menu data:
+> 1. Add credentials to `.env` (see `.env.example`)
+> 2. Run `npm run fetch-catalog` to pull from Square
+> 3. Run `npm run build-menu` to generate a real `output/menu.json`
+>
+> Do not use mock data in a production display without replacing it first.
+
+---
+
 ## Safety Rules
 
 - **Read-only only** — this project uses Square GET endpoints exclusively. No create, update, delete, or mutation calls.

@@ -1,7 +1,39 @@
 /* ─────────────────────────────────────────────────────────────────────────
    Five Daughters Bakery — Digital Menu Board
-   Target: 16:9 TV (1920×1080 reference). All sizes in vh/vw so the layout
-   scales naturally to any 16:9 screen without media queries.
+   Brand: white background, #f59bbb pink accent
+   Font: Neutraface Text (licensed) — see TODO below
+
+   Target: 16:9 TV (1920×1080 reference).
+   All sizes use clamp() + vh/vw so the layout scales to any 16:9 screen.
+───────────────────────────────────────────────────────────────────────── */
+
+/* ── TODO: Neutraface Text ───────────────────────────────────────────────
+   Neutraface Text is a licensed typeface from House Industries.
+   To enable it:
+     1. Obtain a valid web font license from https://www.houseind.com/
+     2. Place the font files in public/fonts/
+     3. Uncomment and fill in the @font-face blocks below
+
+   @font-face {
+     font-family: 'Neutraface Text';
+     src: url('fonts/NeutrafaceText-Book.woff2') format('woff2'),
+          url('fonts/NeutrafaceText-Book.woff')  format('woff');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Neutraface Text';
+     src: url('fonts/NeutrafaceText-Demi.woff2') format('woff2'),
+          url('fonts/NeutrafaceText-Demi.woff')  format('woff');
+     font-weight: 600;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   Then update --font-display and --font-ui below to use it:
+     --font-display: 'Neutraface Text', ...
+     --font-ui:      'Neutraface Text', ...
 ───────────────────────────────────────────────────────────────────────── */
 
 /* ── Reset ── */
@@ -9,38 +41,44 @@
 
 /* ── Design tokens ── */
 :root {
-  /* Palette */
-  --bg:              #0c0a08;
-  --surface:         #151210;
-  --surface-2:       #1c1915;
-  --border:          #2a2520;
-  --border-light:    #342e27;
+  /* Brand palette */
+  --bg:              #ffffff;
+  --surface:         #fdfafa;
+  --surface-2:       #fef6f9;
+  --border:          #f0dfe7;
+  --border-strong:   #e8c8d8;
 
-  --gold:            #c8a45a;
-  --gold-bright:     #e2bb72;
-  --gold-dim:        #8c7040;
-  --cream:           #f2ead8;
-  --cream-dim:       #a09278;
-  --muted:           #6b6055;
+  --pink:            #f59bbb;
+  --pink-deep:       #e07a9f;
+  --pink-light:      #fbd6e7;
+  --pink-pale:       #fef0f5;
 
-  --sold-out-text:   #7a6e62;
-  --sold-out-line:   #4a4238;
+  --text:            #1a1016;
+  --text-secondary:  #6b5260;
+  --text-muted:      #a8879a;
 
-  --warn-bg:         #2a1800;
-  --warn-border:     #5c3000;
-  --warn-text:       #e09040;
+  --sold-out-text:   #c4a0b0;
+  --sold-out-line:   #e8c8d8;
 
-  /* Typography */
-  --font-display:    'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-ui:         'Inter', system-ui, -apple-system, sans-serif;
+  --warn-bg:         #fff4e6;
+  --warn-border:     #f5c070;
+  --warn-text:       #a05a00;
+
+  --error-bg:        #fef5f8;
+
+  /* Typography
+     Fallback stack used until Neutraface Text license is added.
+     See TODO above. */
+  --font-display:    'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --font-ui:         'Inter', 'Helvetica Neue', Arial, sans-serif;
 
   /* Layout */
   --header-h:        9vh;
-  --footer-h:        4.2vh;
-  --warn-h:          3.4vh;
+  --footer-h:        4.5vh;
+  --warn-h:          3.6vh;
   --pad-x:           2vw;
   --pad-y:           1.4vh;
-  --radius:          0.5vw;
+  --radius:          0.6vw;
   --gap:             1.4vw;
 }
 
@@ -50,7 +88,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   background: var(--bg);
-  color: var(--cream);
+  color: var(--text);
   font-family: var(--font-ui);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -70,17 +108,14 @@ html, body {
   justify-content: center;
   gap: 0.6vw;
   font-family: var(--font-ui);
-  font-size: 1.5vh;
+  font-size: clamp(0.65rem, 1.5vh, 1rem);
   font-weight: 500;
   letter-spacing: 0.04em;
-  transition: transform 0.35s ease;
 }
 
 .connection-warning.hidden { display: none; }
-
 .warning-icon { font-size: 1.6vh; }
 
-/* Shift layout down when warning is visible */
 body.has-warning .header    { top: var(--warn-h); }
 body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
@@ -94,11 +129,17 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   align-items: center;
   padding: 0 var(--pad-x);
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--pink-light);
   transition: top 0.35s ease;
+}
 
-  /* Subtle top accent line */
-  box-shadow: inset 0 3px 0 0 var(--gold-dim);
+/* Pink accent bar along the very top */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--pink) 0%, var(--pink-deep) 100%);
 }
 
 .header-left {
@@ -110,42 +151,39 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 .header-wordmark {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3.2vh, 2.6rem);
+  font-size: clamp(1.4rem, 3vh, 2.4rem);
   font-weight: 700;
-  color: var(--gold-bright);
-  letter-spacing: 0.06em;
+  color: var(--text);
+  letter-spacing: 0.04em;
   line-height: 1;
   white-space: nowrap;
 }
 
 .header-tagline {
   font-family: var(--font-ui);
-  font-size: clamp(0.6rem, 1.2vh, 1rem);
-  font-weight: 300;
-  color: var(--cream-dim);
-  letter-spacing: 0.18em;
+  font-size: clamp(0.55rem, 1.1vh, 0.85rem);
+  font-weight: 400;
+  color: var(--pink-deep);
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .header-divider {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, var(--border-light), transparent);
+  background: linear-gradient(to right, var(--border-strong), transparent);
   margin: 0 var(--pad-x);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-.header-right {
-  flex: 0 0 auto;
-  text-align: right;
-}
+.header-right { flex: 0 0 auto; text-align: right; }
 
 .header-location {
   font-family: var(--font-ui);
-  font-size: clamp(0.75rem, 1.6vh, 1.2rem);
+  font-size: clamp(0.7rem, 1.5vh, 1.1rem);
   font-weight: 500;
-  color: var(--cream-dim);
-  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
@@ -159,6 +197,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   overflow-y: auto;
   overflow-x: hidden;
   padding: var(--pad-y) var(--pad-x);
+  background: var(--bg);
   transition: top 0.35s ease;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -166,17 +205,12 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .menu-root::-webkit-scrollbar { display: none; }
 
 /* ── Sections grid ── */
-/*
-  Auto-fill columns: each column is at least 22vw wide.
-  On a 1920px screen this gives ~4 columns for a typical 10-section menu.
-  Fewer sections → wider columns, which looks intentional.
-*/
 .sections-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(22vw, 1fr));
   gap: var(--gap);
   align-items: start;
-  animation: fadeUp 0.45s ease both;
+  animation: fadeUp 0.4s ease both;
 }
 
 /* ── Section card ── */
@@ -185,22 +219,21 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  /* Top accent bar */
-  border-top: 2px solid var(--gold-dim);
+  border-top: 3px solid var(--pink);
 }
 
 .section-header {
-  padding: 1.1vh var(--pad-x) 1vh;
+  padding: 1vh var(--pad-x) 0.9vh;
   background: var(--surface-2);
   border-bottom: 1px solid var(--border);
 }
 
 .section-name {
   font-family: var(--font-display);
-  font-size: clamp(0.9rem, 1.9vh, 1.5rem);
+  font-size: clamp(0.85rem, 1.8vh, 1.4rem);
   font-weight: 600;
-  color: var(--gold-bright);
-  letter-spacing: 0.06em;
+  color: var(--pink-deep);
+  letter-spacing: 0.04em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -211,32 +244,30 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 .item-row {
   display: grid;
-  /* name takes available space; price is fixed; dots fill the gap */
   grid-template-columns: 1fr auto auto;
   align-items: baseline;
   column-gap: 0.5vw;
-  padding: 1.05vh var(--pad-x);
+  padding: 1vh var(--pad-x);
   border-bottom: 1px solid var(--border);
   transition: opacity 0.25s ease;
 }
 .item-row:last-child { border-bottom: none; }
 
-/* Sold-out state */
-.item-row.sold-out { opacity: 0.42; }
+/* Sold out */
+.item-row.sold-out { opacity: 0.45; }
 .item-row.sold-out .item-name {
   text-decoration: line-through;
   text-decoration-color: var(--sold-out-line);
   text-decoration-thickness: 1px;
 }
 
-/* Item name — clamp long names to 2 lines max */
+/* Item name — wrap up to 2 lines, then ellipsis */
 .item-name {
   font-family: var(--font-ui);
-  font-size: clamp(0.8rem, 1.75vh, 1.35rem);
+  font-size: clamp(0.78rem, 1.7vh, 1.3rem);
   font-weight: 400;
-  color: var(--cream);
+  color: var(--text);
   line-height: 1.35;
-  /* Allow wrapping but limit to 2 lines */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -248,37 +279,32 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .item-dots {
   align-self: flex-end;
   width: 2.5vw;
-  min-width: 1vw;
-  border-bottom: 1.5px dotted var(--border-light);
+  min-width: 0.8vw;
+  border-bottom: 1.5px dotted var(--border-strong);
   margin-bottom: 0.28vh;
 }
 
 /* Price */
 .item-price {
   font-family: var(--font-ui);
-  font-size: clamp(0.8rem, 1.75vh, 1.35rem);
-  font-weight: 500;
-  color: var(--gold);
+  font-size: clamp(0.78rem, 1.7vh, 1.3rem);
+  font-weight: 600;
+  color: var(--pink-deep);
   white-space: nowrap;
 }
 
 /* Sold Out label */
 .item-sold-out-label {
   font-family: var(--font-ui);
-  font-size: clamp(0.6rem, 1.25vh, 0.95rem);
+  font-size: clamp(0.58rem, 1.15vh, 0.88rem);
   font-weight: 600;
   color: var(--sold-out-text);
   white-space: nowrap;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 /* ── Variation sub-rows ── */
-/*
-  When an item has multiple flavors (e.g. Poppi soda),
-  sub-rows sit indented below the item name row.
-  The parent .item-row just shows the name; price/dots are hidden.
-*/
 .item-row.has-variations {
   grid-template-columns: 1fr;
   padding-bottom: 0;
@@ -295,8 +321,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   grid-template-columns: 1fr auto auto;
   align-items: baseline;
   column-gap: 0.4vw;
-  padding: 0.5vh 0;
-  border-bottom: 1px solid rgba(42, 37, 32, 0.7);
+  padding: 0.45vh 0;
+  border-bottom: 1px solid rgba(240, 223, 231, 0.7);
 }
 .variation-row:last-child { border-bottom: none; }
 
@@ -308,9 +334,9 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 .variation-name {
   font-family: var(--font-ui);
-  font-size: clamp(0.7rem, 1.45vh, 1.1rem);
+  font-size: clamp(0.68rem, 1.4vh, 1.05rem);
   font-weight: 300;
-  color: var(--cream-dim);
+  color: var(--text-secondary);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -320,27 +346,26 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   align-self: flex-end;
   width: 2vw;
   min-width: 0.5vw;
-  border-bottom: 1.5px dotted var(--border-light);
+  border-bottom: 1.5px dotted var(--border);
   margin-bottom: 0.2vh;
-  opacity: 0.5;
 }
 
 .variation-price {
   font-family: var(--font-ui);
-  font-size: clamp(0.7rem, 1.45vh, 1.1rem);
-  font-weight: 400;
-  color: var(--gold);
-  opacity: 0.75;
+  font-size: clamp(0.68rem, 1.4vh, 1.05rem);
+  font-weight: 500;
+  color: var(--pink-deep);
+  opacity: 0.8;
   white-space: nowrap;
 }
 
 .variation-sold-out-label {
   font-family: var(--font-ui);
-  font-size: clamp(0.55rem, 1.1vh, 0.85rem);
+  font-size: clamp(0.55rem, 1.05vh, 0.8rem);
   font-weight: 600;
   color: var(--sold-out-text);
   white-space: nowrap;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -349,8 +374,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   padding: 1.8vh var(--pad-x);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(0.7rem, 1.4vh, 1rem);
-  color: var(--muted);
+  font-size: clamp(0.7rem, 1.3vh, 1rem);
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -369,28 +394,19 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   padding: 0 var(--pad-x);
 }
 
-.footer-location {
-  font-family: var(--font-ui);
-  font-size: clamp(0.55rem, 1.15vh, 0.9rem);
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.footer-sep {
-  color: var(--border-light);
-  font-size: 1.1vh;
-}
-
+.footer-location,
 .footer-updated {
   font-family: var(--font-ui);
-  font-size: clamp(0.55rem, 1.15vh, 0.9rem);
+  font-size: clamp(0.52rem, 1.1vh, 0.85rem);
   font-weight: 400;
-  color: var(--muted);
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
 }
 
-/* ── Loading / error states ── */
+.footer-location { text-transform: uppercase; font-weight: 500; }
+.footer-sep { color: var(--border-strong); font-size: 1vh; }
+
+/* ── Loading state ── */
 .loading-state {
   display: flex;
   align-items: center;
@@ -402,8 +418,40 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-display);
   font-style: italic;
   font-size: clamp(1rem, 2.2vh, 1.8rem);
-  color: var(--muted);
+  color: var(--text-muted);
   letter-spacing: 0.06em;
+}
+
+/* ── Error state ── */
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  height: 55vh;
+  text-align: center;
+  padding: 0 8vw;
+}
+
+.error-icon {
+  font-size: clamp(2rem, 5vh, 4rem);
+  color: var(--pink-light);
+  line-height: 1;
+}
+
+.error-message {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.2vh, 1.8rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.error-sub {
+  font-family: var(--font-ui);
+  font-size: clamp(0.7rem, 1.4vh, 1.05rem);
+  font-weight: 400;
+  color: var(--text-muted);
 }
 
 /* ── Animations ── */
@@ -412,21 +460,19 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Subtle pulse on the footer timestamp during background refresh */
 @keyframes softPulse {
   0%, 100% { opacity: 1; }
-  50%       { opacity: 0.45; }
+  50%       { opacity: 0.4; }
 }
 
 body.refreshing .footer-updated {
   animation: softPulse 1.2s ease infinite;
 }
 
-/* ── Accessibility: reduce motion ── */
+/* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
-  .sections-grid  { animation: none; }
-  .footer-updated { animation: none !important; }
-  .item-row       { transition: none; }
-  .connection-warning { transition: none; }
-  .menu-root, .header { transition: none; }
+  .sections-grid   { animation: none; }
+  .footer-updated  { animation: none !important; }
+  .item-row        { transition: none; }
+  .connection-warning, .menu-root, .header { transition: none; }
 }

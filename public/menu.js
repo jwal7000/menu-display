@@ -1,8 +1,10 @@
 /**
  * menu.js — Five Daughters Bakery Digital Menu Board
  *
- * Fetches ../output/menu.json, renders the menu, and refreshes every 60s.
- * On fetch failure, keeps the last successful menu and shows a warning banner.
+ * Fetches menu.json, renders the menu, and auto-refreshes every 60s.
+ * On fetch failure: keeps the last successful menu and shows a polished
+ * error state. Never leaves the screen stuck on "Loading menu…".
+ *
  * No framework dependencies — plain ES2020 JavaScript.
  */
 
@@ -11,7 +13,23 @@
 
   // ── Config ────────────────────────────────────────────────────────────────
 
-  const MENU_JSON_PATH   = "../output/menu.json";
+  /**
+   * Path to menu.json.
+   *
+   * Uses an absolute path from the repo root so this works correctly
+   * regardless of whether the page is served locally or from GitHub Pages
+   * at any subdirectory depth.
+   *
+   * Local (npm run preview):  http://localhost:3000/output/menu.json
+   * GitHub Pages:             https://jwal7000.github.io/menu-display/output/menu.json
+   *
+   * If you move this repo or rename it, update BASE_PATH below.
+   */
+  const BASE_PATH        = window.location.hostname === "localhost" ||
+                           window.location.hostname === "127.0.0.1"
+                             ? ""
+                             : "/menu-display";
+  const MENU_JSON_PATH   = BASE_PATH + "/output/menu.json";
   const REFRESH_INTERVAL = 60 * 1000; // 60 seconds
 
   // ── Element refs ──────────────────────────────────────────────────────────
@@ -24,16 +42,10 @@
 
   // ── State ─────────────────────────────────────────────────────────────────
 
-  let lastGoodMenu   = null;
-  let isFirstLoad    = true;
+  let lastGoodMenu = null;
+  let isFirstLoad  = true;
 
   // ── Utilities ─────────────────────────────────────────────────────────────
-
-  function formatTimestamp(isoString) {
-    if (!isoString) return "";
-    const d = new Date(isoString);
-    return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-  }
 
   function formatFullTimestamp(isoString) {
     if (!isoString) return "";
@@ -52,12 +64,32 @@
     }
   }
 
-  // ── DOM builders ─────────────────────────────────────────────────────────
+  function showErrorState(message) {
+    menuRoot.innerHTML = "";
+    const wrap = document.createElement("div");
+    wrap.className = "error-state";
 
-  /**
-   * Build a single item row (<li>).
-   * Handles sold-out display: strikethrough + label vs normal price.
-   */
+    const icon = document.createElement("div");
+    icon.className = "error-icon";
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = "✦";
+
+    const msg = document.createElement("p");
+    msg.className = "error-message";
+    msg.textContent = message;
+
+    const sub = document.createElement("p");
+    sub.className = "error-sub";
+    sub.textContent = "This page will retry automatically every 60 seconds.";
+
+    wrap.appendChild(icon);
+    wrap.appendChild(msg);
+    wrap.appendChild(sub);
+    menuRoot.appendChild(wrap);
+  }
+
+  // ── DOM builders ──────────────────────────────────────────────────────────
+
   function buildItemRow(item) {
     const li = document.createElement("li");
     li.className = "item-row" + (item.sold_out ? " sold-out" : "");
@@ -83,11 +115,9 @@
     li.appendChild(dotsEl);
     li.appendChild(priceEl);
 
-    // If item has multiple variations, append them as sub-rows
+    // Multi-variation items (e.g. Poppi soda flavors)
     if (Array.isArray(item.variations) && item.variations.length > 1) {
       li.classList.add("has-variations");
-
-      // Remove dot leader from parent row when showing variations
       dotsEl.style.display = "none";
       priceEl.style.display = "none";
 
@@ -127,30 +157,21 @@
     return li;
   }
 
-  /**
-   * Build a section card (<div.section-card>).
-   */
   function buildSectionCard(section) {
     const card = document.createElement("div");
     card.className = "section-card";
 
     const header = document.createElement("div");
     header.className = "section-header";
-
     const title = document.createElement("h2");
     title.className = "section-name";
     title.textContent = section.name;
-
     header.appendChild(title);
     card.appendChild(header);
 
-    const list = document.createElement("ul");
-    list.className = "item-list";
-    list.setAttribute("aria-label", section.name + " items");
-
     const items = section.items ?? [];
+
     if (items.length === 0) {
-      // Show empty state instead of skipping — keeps the section visible
       const empty = document.createElement("p");
       empty.className = "section-empty";
       empty.textContent = "Nothing available right now";
@@ -158,50 +179,37 @@
       return card;
     }
 
+    const list = document.createElement("ul");
+    list.className = "item-list";
+    list.setAttribute("aria-label", section.name + " items");
     for (const item of items) {
       list.appendChild(buildItemRow(item));
     }
-
     card.appendChild(list);
     return card;
   }
 
-  /**
-   * Render the full menu from a menu.json data object.
-   */
   function renderMenu(data) {
-    // Update header and footer meta
     const locName = data.location_name ?? "";
-    const ts      = data.generated_at ?? "";
-    locationNameEl.textContent  = locName;
-    if (footerLocationEl) footerLocationEl.textContent = locName;
-    if (footerUpdatedEl)  footerUpdatedEl.textContent  = ts ? "Last updated " + formatFullTimestamp(ts) : "";
+    const ts      = data.generated_at  ?? "";
 
-    // Build section grid
+    if (locationNameEl)   locationNameEl.textContent  = locName;
+    if (footerLocationEl) footerLocationEl.textContent = locName;
+    if (footerUpdatedEl)  footerUpdatedEl.textContent  =
+      ts ? "Last updated " + formatFullTimestamp(ts) : "";
+
     const grid = document.createElement("div");
     grid.className = "sections-grid";
 
-    const sections = data.sections ?? [];
-    let renderedCount = 0;
-
-    for (const section of sections) {
-      const card = buildSectionCard(section);
-      if (card) {
-        grid.appendChild(card);
-        renderedCount++;
-      }
+    for (const section of (data.sections ?? [])) {
+      grid.appendChild(buildSectionCard(section));
     }
 
-    if (renderedCount === 0) {
-      const empty = document.createElement("div");
-      empty.className = "loading-state";
-      empty.textContent = "No menu items available.";
-      menuRoot.innerHTML = "";
-      menuRoot.appendChild(empty);
+    if (!grid.hasChildNodes()) {
+      showErrorState("No menu sections available.");
       return;
     }
 
-    // Swap in the new grid (avoids flash — build off-DOM first)
     menuRoot.innerHTML = "";
     menuRoot.appendChild(grid);
   }
@@ -209,18 +217,19 @@
   // ── Data fetching ─────────────────────────────────────────────────────────
 
   async function fetchMenu() {
-    // Show pulse on the timestamp during refresh (after first load)
     if (!isFirstLoad) {
       document.body.classList.add("refreshing");
     }
 
+    // Log the exact URL being fetched so it's easy to debug in DevTools
+    const url = MENU_JSON_PATH + "?t=" + Date.now();
+    console.log("[menu.js] Fetching:", url);
+
     try {
-      // Cache-bust so the browser always fetches the latest file
-      const url      = MENU_JSON_PATH + "?t=" + Date.now();
       const response = await fetch(url);
 
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
+        throw new Error(`HTTP ${response.status} — ${url}`);
       }
 
       const data = await response.json();
@@ -231,18 +240,15 @@
       isFirstLoad = false;
 
     } catch (err) {
-      console.warn("[menu.js] Failed to load menu.json:", err.message);
+      console.error("[menu.js] Failed to load menu.json:", err.message);
+      console.error("[menu.js] Attempted path:", url);
 
       if (lastGoodMenu) {
-        // Keep showing the last good menu; show warning
+        // Keep showing last good menu with warning banner
         setWarning(true);
       } else {
-        // Very first load failed — show an error state
-        menuRoot.innerHTML = "";
-        const errEl = document.createElement("div");
-        errEl.className = "loading-state";
-        errEl.textContent = "Unable to load menu. Retrying…";
-        menuRoot.appendChild(errEl);
+        // First load failed — show polished error, not indefinite spinner
+        showErrorState("Unable to load the menu right now.");
         setWarning(true);
       }
     } finally {
@@ -252,10 +258,7 @@
 
   // ── Boot ──────────────────────────────────────────────────────────────────
 
-  // Initial load
   fetchMenu();
-
-  // Refresh on interval
   setInterval(fetchMenu, REFRESH_INTERVAL);
 
 })();
