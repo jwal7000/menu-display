@@ -1,136 +1,85 @@
 {
-  "location_id": "AX2YMJVN8QJ7C",
+  "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-07-08T19:00:00.000Z",
-  "source_fetched_at": "2026-07-08T18:55:00.000Z",
-  "section_count": 9,
-  "item_count": 52,
+  "generated_at": "2026-07-22T20:05:13.222Z",
+  "source_fetched_at": "2026-07-22T20:05:13.220Z",
+  "section_count": 2,
+  "item_count": 11,
   "sections": [
     {
-      "name": "Hundred Layer Donuts",
+      "name": "Hundred Layer Donuts - Staple Flavors",
       "items": [
-        { "item_id": "h001", "name": "The Purist", "price": "$4.50", "sold_out": false },
-        { "item_id": "h002", "name": "Chocolate Sea Salt", "price": "$4.50", "sold_out": false },
-        { "item_id": "h003", "name": "Vanilla Cream", "price": "$4.50", "sold_out": false },
-        { "item_id": "h004", "name": "Maple Glaze", "price": "$4.75", "sold_out": false },
-        { "item_id": "h005", "name": "Milk Chocolate Sprinkles", "price": "$4.50", "sold_out": false },
-        { "item_id": "h006", "name": "King Kong", "price": "$5.25", "sold_out": false },
-        { "item_id": "h007", "name": "Blueberry Lemon", "price": "$4.75", "sold_out": false },
-        { "item_id": "h008", "name": "Samoa", "price": "$5.25", "sold_out": false },
-        { "item_id": "h009", "name": "Strawberry Fields", "price": "$4.75", "sold_out": false },
-        { "item_id": "h010", "name": "Cinnamon Crispy Crunch", "price": "$4.75", "sold_out": true },
-        { "item_id": "h011", "name": "Chocolate Chip Cookie Dough", "price": "$5.25", "sold_out": false },
-        { "item_id": "h012", "name": "S'mores", "price": "$5.25", "sold_out": false }
-      ]
-    },
-    {
-      "name": "Mini Donuts",
-      "items": [
-        { "item_id": "m001", "name": "Mini Purist", "price": "$2.75", "sold_out": false },
-        { "item_id": "m002", "name": "Mini Milk Chocolate Sprinkles", "price": "$2.75", "sold_out": false },
-        { "item_id": "m003", "name": "Mini Blueberry Lemon", "price": "$2.75", "sold_out": false },
-        { "item_id": "m004", "name": "Mini Strawberry Fields", "price": "$2.75", "sold_out": false },
-        { "item_id": "m005", "name": "Mini Cinnamon Crispy Crunch", "price": "$2.75", "sold_out": false },
-        { "item_id": "m006", "name": "Mini Vanilla Cream", "price": "$2.75", "sold_out": true }
-      ]
-    },
-    {
-      "name": "Paleo Donuts",
-      "items": [
-        { "item_id": "p001", "name": "Paleo - Chocolate Chip Sea Salt", "price": "$5.25", "sold_out": false },
-        { "item_id": "p002", "name": "Paleo - Cinnamon Crispy Crunch", "price": "$5.25", "sold_out": false },
-        { "item_id": "p003", "name": "Paleo - Strawberry Fields", "price": "$5.25", "sold_out": false },
-        { "item_id": "p004", "name": "Paleo - Samoa", "price": "$5.50", "sold_out": false }
-      ]
-    },
-    {
-      "name": "Yeast Raised",
-      "items": [
-        { "item_id": "y001", "name": "Yeast Raised - Purist", "price": "$3.50", "sold_out": false },
-        { "item_id": "y002", "name": "Yeast Raised - Milk Chocolate Sprinkles", "price": "$3.50", "sold_out": false },
-        { "item_id": "y003", "name": "Yeast Raised - Boston Cream (Filled)", "price": "$3.75", "sold_out": false },
-        { "item_id": "y004", "name": "Yeast Raised - Apple Fritter", "price": "$3.75", "sold_out": false },
-        { "item_id": "y005", "name": "Yeast Raised - Strawberry Jam (Filled)", "price": "$3.75", "sold_out": true }
-      ]
-    },
-    {
-      "name": "Cinnamon Rolls",
-      "items": [
-        { "item_id": "r001", "name": "Roll - Cinnamon Glaze", "price": "$6.00", "sold_out": false },
-        { "item_id": "r002", "name": "Roll - Cinnamon Cream Cheese", "price": "$6.25", "sold_out": false },
-        { "item_id": "r003", "name": "Roll - Apple Pie", "price": "$7.00", "sold_out": false },
-        { "item_id": "r004", "name": "Roll - Raspberry Lemon Cream Cheese", "price": "$7.25", "sold_out": false }
-      ]
-    },
-    {
-      "name": "Cookies",
-      "items": [
-        { "item_id": "c001", "name": "Cookie - Chocolate Chip", "price": "$3.75", "sold_out": false },
-        { "item_id": "c002", "name": "Cookie - My Sister's Sugar Cookie", "price": "$3.50", "sold_out": false },
-        { "item_id": "c003", "name": "Cookie - Oatmeal Raisin", "price": "$3.50", "sold_out": false },
-        { "item_id": "c004", "name": "Cookie - Ginger Molasses", "price": "$3.50", "sold_out": false },
-        { "item_id": "c005", "name": "Cookie - Snowcap (GF)", "price": "$4.00", "sold_out": false }
-      ]
-    },
-    {
-      "name": "Breakfast",
-      "items": [
-        { "item_id": "b001", "name": "Biscuit - Bacon Egg & Cheese", "price": "$7.00", "sold_out": false },
-        { "item_id": "b002", "name": "Biscuit - Egg & Cheese", "price": "$5.00", "sold_out": false },
-        { "item_id": "b003", "name": "Biscuit - Sausage Egg & Cheese", "price": "$7.00", "sold_out": false },
-        { "item_id": "b004", "name": "Avocado Toast", "price": "$5.00", "sold_out": true }
-      ]
-    },
-    {
-      "name": "Coffee",
-      "items": [
-        { "item_id": "k001", "name": "Latte", "price": "$5.25", "sold_out": false },
-        { "item_id": "k002", "name": "Cappuccino", "price": "$4.75", "sold_out": false },
-        { "item_id": "k003", "name": "Americano", "price": "$3.25", "sold_out": false },
-        { "item_id": "k004", "name": "Cold Brew", "price": "$4.75", "sold_out": false },
-        { "item_id": "k005", "name": "Chai Tea Latte", "price": "$5.25", "sold_out": false },
-        { "item_id": "k006", "name": "Pumpkin Spice Latte", "price": "$5.75", "sold_out": false },
         {
-          "item_id": "k007",
-          "name": "Seasonal Latte",
-          "price": "$5.25 – $5.75",
-          "sold_out": false,
-          "variations": [
-            { "variation_id": "k007a", "variation_name": "12 oz", "price": "$5.25", "sold_out": false },
-            { "variation_id": "k007b", "variation_name": "16 oz", "price": "$5.75", "sold_out": false }
-          ]
+          "item_id": "01001",
+          "name": "Vanilla Cream",
+          "image_url": "https://www.dropbox.com/s/4o583r65pyk0ib5/vanilla%20cream.jpg?dl=0",
+          "price": "$5.35"
+        },
+        {
+          "item_id": "01002",
+          "name": "The Purist",
+          "image_url": "https://www.dropbox.com/s/2bxvijk55qerto6/purist.jpg?dl=0",
+          "price": "$4.75"
+        },
+        {
+          "item_id": "01003",
+          "name": "Chocolate Sea Salt",
+          "image_url": "https://www.dropbox.com/s/px5webqh05kukxc/chocolate%20sea%20salt.jpg?dl=0",
+          "price": "$5.35"
+        },
+        {
+          "item_id": "01004",
+          "name": "Maple Glaze",
+          "image_url": "https://www.dropbox.com/s/27vtwcy4ggee1om/maple%20glaze.jpg?dl=0",
+          "price": "$5.35"
+        },
+        {
+          "item_id": "01005",
+          "name": "King Kong",
+          "image_url": "https://www.dropbox.com/s/em3bx20y9q4lnzg/king%20kong.jpg?dl=0",
+          "price": "$5.70"
+        },
+        {
+          "item_id": "01006",
+          "name": "Milk Chocolate Sprinkles",
+          "image_url": "https://www.dropbox.com/s/xr1080ojw9tx6ji/milk%20chocolate%20sprinkles.jpg?dl=0",
+          "price": "$5.10"
         }
       ]
     },
     {
-      "name": "Drinks",
+      "name": "Hundred Layer Donuts - Seasonal Flavors",
       "items": [
-        { "item_id": "d001", "name": "Nitro Cold Brew", "price": "$5.00", "sold_out": false },
         {
-          "item_id": "d002",
-          "name": "Poppi Prebiotic Soda",
-          "price": "$3.50",
-          "sold_out": false,
-          "variations": [
-            { "variation_id": "d002a", "variation_name": "Ginger Lime", "price": "$3.50", "sold_out": false },
-            { "variation_id": "d002b", "variation_name": "Strawberry Lemon", "price": "$3.50", "sold_out": true },
-            { "variation_id": "d002c", "variation_name": "Orange", "price": "$3.50", "sold_out": false }
-          ]
+          "item_id": "01035",
+          "name": "Lemon Icebox",
+          "image_url": "https://www.dropbox.com/s/a1d5t7txbuacuj1/lemon%20icebox.jpg?dl=0",
+          "price": "$5.35"
         },
-        { "item_id": "d003", "name": "Boylan Cola", "price": "$3.50", "sold_out": false },
-        { "item_id": "d004", "name": "Topo Chico", "price": "$3.00", "sold_out": false },
-        { "item_id": "d005", "name": "Water", "price": "$1.00", "sold_out": false }
+        {
+          "item_id": "01084",
+          "name": "Cherry Cheesecake",
+          "image_url": "https://www.dropbox.com/s/5c0qzma15en1lms/cherrycheesecake.JPG?dl=0",
+          "price": "$5.70"
+        },
+        {
+          "item_id": "01010",
+          "name": "Cinnamon Cream Cheese",
+          "image_url": "https://www.dropbox.com/s/jb0om3ytmw6931p/cinnamon%20cream%20cheese.jpg?dl=0",
+          "price": "$5.35"
+        },
+        {
+          "item_id": "01234",
+          "name": "Affogato",
+          "price": "$5.35"
+        },
+        {
+          "item_id": "01017",
+          "name": "Samoa",
+          "image_url": "https://www.dropbox.com/s/3laa372jmbjaeqd/samoa.jpg?dl=0",
+          "price": "$5.35"
+        }
       ]
     }
-  ],
-  "_build_stats": {
-    "input_total": 72,
-    "excluded_archived": 2,
-    "excluded_no_section": 18,
-    "excluded_keyword": 12,
-    "excluded_no_price": 3,
-    "hidden_sold_out": 0,
-    "included": 52,
-    "unavailable_behavior": "show_as_sold_out"
-  }
+  ]
 }
