@@ -7,10 +7,12 @@
     "list-locations": "node src/listLocations.js",
     "fetch-catalog": "node src/fetchCatalog.js",
     "build-menu": "node src/buildMenu.js",
+    "build-menu-sheets": "node src/buildMenuFromSheets.js",
     "preview": "serve . -p 3000 --no-clipboard"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "googleapis": "^139.0.0",
     "square": "^44.2.0"
   },
   "devDependencies": {
