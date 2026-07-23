@@ -218,16 +218,35 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .item-list { list-style: none; }
 
 .item-row {
-  display: grid;
-  /* name takes available space; price is fixed; dots fill the gap */
-  grid-template-columns: 1fr auto auto;
-  align-items: baseline;
-  column-gap: 0.5vw;
-  padding: 1.05vh var(--pad-x);
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 0.8vh var(--pad-x);
   border-bottom: 1px solid var(--border);
   transition: opacity 0.25s ease;
 }
 .item-row:last-child { border-bottom: none; }
+
+/* Thumbnail image */
+.item-thumb {
+  flex: 0 0 auto;
+  width: 5.5vh;
+  height: 5.5vh;
+  object-fit: cover;
+  border-radius: 0.3vw;
+  border: 1px solid var(--border-light);
+  opacity: 0.9;
+}
+
+/* Text wrapper holds name + dots + price in a row */
+.item-text {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: baseline;
+  column-gap: 0.5vw;
+  flex: 1;
+  min-width: 0;
+}
 
 /* Sold-out state */
 .item-row.sold-out { opacity: 0.42; }
