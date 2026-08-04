@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-04T16:41:30.843Z",
-  "section_count": 2,
-  "item_count": 11,
+  "generated_at": "2026-08-04T16:51:35.333Z",
+  "section_count": 3,
+  "item_count": 14,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -87,6 +87,29 @@
           "name": "Samoa",
           "image_url": "https://www.dropbox.com/s/3laa372jmbjaeqd/samoa.jpg?dl=0",
           "price": "$5.35",
+          "sold_out": false
+        }
+      ]
+    },
+    {
+      "name": "Mini Hundred Layer Donuts",
+      "items": [
+        {
+          "item_id": "02001",
+          "name": "Mini Purist",
+          "price": "$2.75",
+          "sold_out": false
+        },
+        {
+          "item_id": "02002",
+          "name": "Mini Milk Chocolate Sprinkles",
+          "price": "$2.75",
+          "sold_out": false
+        },
+        {
+          "item_id": "02065",
+          "name": "Mini Vanilla Cream",
+          "price": "$3.00",
           "sold_out": false
         }
       ]
