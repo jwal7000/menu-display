@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-04T16:51:35.333Z",
-  "section_count": 3,
-  "item_count": 14,
+  "generated_at": "2026-08-04T16:59:04.064Z",
+  "section_count": 4,
+  "item_count": 24,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -97,19 +97,97 @@
         {
           "item_id": "02001",
           "name": "Mini Purist",
+          "image_url": "https://www.dropbox.com/s/77ctufdzwjflmv3/mini_purist.jpg?dl=0",
           "price": "$2.75",
           "sold_out": false
         },
         {
           "item_id": "02002",
           "name": "Mini Milk Chocolate Sprinkles",
+          "image_url": "https://www.dropbox.com/s/w63tbkfkuf5lwfc/mini_milk%20chocolate%20sprinkles.jpg?dl=0",
           "price": "$2.75",
           "sold_out": false
         },
         {
           "item_id": "02065",
           "name": "Mini Vanilla Cream",
+          "image_url": "https://www.dropbox.com/scl/fi/yshir0wz6vthyftw68dj0/mini_vanillacream.jpg?rlkey=wuemimr2xq93n2ubg3zqsg5ve&st=2daloyl3&dl=0",
           "price": "$3.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "02029",
+          "name": "Mini Samoa",
+          "image_url": "https://www.dropbox.com/s/o4xh79cubywyio3/minisamoa.JPG?dl=0",
+          "price": "$3.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "02004",
+          "name": "Mini Cinnamon Sugar",
+          "image_url": "https://www.dropbox.com/s/3axhjk0654enkf7/minicinnamonsugar%28new%29.JPG?dl=0",
+          "price": "$2.75",
+          "sold_out": false
+        },
+        {
+          "item_id": "02050",
+          "name": "Mini Cherry Glaze",
+          "image_url": "https://www.dropbox.com/s/phrpk2cplbro4aj/minicherryglaze.JPG?dl=0",
+          "price": "$2.75",
+          "sold_out": false
+        }
+      ]
+    },
+    {
+      "name": "Yeast-Raised Donuts",
+      "items": [
+        {
+          "item_id": "03001",
+          "name": "Purist",
+          "image_url": "https://www.dropbox.com/s/o66v9gdbys90y2v/YR_Purist.jpg?dl=0",
+          "price": "$3.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "03002",
+          "name": "Milk Chocolate Sprinkles",
+          "image_url": "https://www.dropbox.com/s/2k3kanh5waj7217/YR_milk%20chocolate%20sprinkles.jpg?dl=0",
+          "price": "$3.25",
+          "sold_out": false
+        },
+        {
+          "item_id": "03004",
+          "name": "Boston Cream",
+          "image_url": "https://www.dropbox.com/s/ism7jadcxczkplb/YR_boston%20cream.jpg?dl=0",
+          "price": "$4.25",
+          "sold_out": false
+        },
+        {
+          "item_id": "03999",
+          "name": "Apple Fritter",
+          "image_url": "https://www.dropbox.com/s/xks9du1xap2iryw/YR_apple%20fritter.jpg?dl=0",
+          "price": "$4.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "03008",
+          "name": "Cinnamon Sugar Toast",
+          "image_url": "https://www.dropbox.com/scl/fi/9jmcikibwkzpj7k7jv3ky/cinnamonsugartoast.JPG?rlkey=enfox8b1ay3tkiou5j56gewxl&dl=0",
+          "price": "$3.25",
+          "sold_out": false
+        },
+        {
+          "item_id": "03072",
+          "name": "Cherry Cheesecake",
+          "image_url": "https://www.dropbox.com/scl/fi/ilb0c3p60xues7uee06fo/YR_Cherry-Cheesecake.jpg?rlkey=999evi05tebppfsm0qtze0idv&st=5bogh9gp&dl=0",
+          "price": "$4.25",
+          "sold_out": false
+        },
+        {
+          "item_id": "03084",
+          "name": "Samoa",
+          "image_url": "https://www.dropbox.com/scl/fi/wg6xe2q4a9i9c8a9y7pyv/samoa.JPG?rlkey=281m3lgk4beukzg1eh2fj86m2&dl=0",
+          "price": "$3.50",
           "sold_out": false
         }
       ]
