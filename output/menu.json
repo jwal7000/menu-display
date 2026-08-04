@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-04T18:12:11.854Z",
+  "generated_at": "2026-08-04T18:22:16.920Z",
   "section_count": 5,
-  "item_count": 26,
+  "item_count": 28,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -197,12 +197,30 @@
       "items": [
         {
           "item_id": "17001",
-          "name": "Cinnamon Cream Cheese",
+          "name": "Cinnamon Cream Cheese Roll",
+          "image_url": "https://www.dropbox.com/scl/fi/3uq3aj0x14eoluzhkkspg/cinnamon-glaze-roll.jpg?rlkey=06jj9w33aa5fa4qpee4onmrzn&st=uy2nepn0&dl=0",
+          "price": "$6.00",
           "sold_out": false
         },
         {
           "item_id": "17002",
-          "name": "Cinnamon Glaze",
+          "name": "Cinnamon Glaze Roll",
+          "image_url": "https://www.dropbox.com/scl/fi/bfziaju09nxzz4ue3adzb/cinnamon-cream-cheese-roll.jpg?rlkey=lia8k64miaoqf5n60zqx6sp2z&st=j8oftaij&dl=0",
+          "price": "$6.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "17004",
+          "name": "Raspberry Lemon Roll",
+          "image_url": "https://www.dropbox.com/scl/fi/i1ej9fy314erhvc4k7p2e/raspberry-lemon-roll.jpg?rlkey=ci1fajjwaqzfts81uf0r8zxqu&st=danytmbq&dl=0",
+          "price": "$7.00",
+          "sold_out": false
+        },
+        {
+          "item_id": "17008",
+          "name": "Blueberry Lemon Roll",
+          "image_url": "https://www.dropbox.com/scl/fi/33s0b2mlz354sgee23mnz/blueberry-lemon-roll.jpg?rlkey=6ummg5zblmwjb7268rugusprb&st=dvtpezph&dl=0",
+          "price": "$7.00",
           "sold_out": false
         }
       ]
