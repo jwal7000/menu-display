@@ -17,26 +17,38 @@
 
 /* ── Design tokens ── */
 :root {
-  /* Palette */
-  --bg:              #0c0a08;
-  --surface:         #151210;
-  --surface-2:       #1c1915;
-  --border:          #2a2520;
-  --border-light:    #342e27;
+  /* FDB Brand Palette */
+  --pink:            #f59bbb;   /* primary */
+  --pink-dim:        #e07a9e;   /* darker pink for accents/borders */
+  --pink-pale:       #fce8f1;   /* very light pink for surfaces */
+  --plum:            #5c2946;   /* dark text / headings */
+  --plum-mid:        #7a3a5e;   /* mid plum for secondary text */
+  --teal:            #9cdbd9;   /* accent / pop of color */
+  --teal-dim:        #6bbfbc;   /* slightly deeper teal */
+  --white:           #ffffff;
+  --off-white:       #fdf6fa;   /* warm white for body bg */
 
-  --gold:            #c8a45a;
-  --gold-bright:     #e2bb72;
-  --gold-dim:        #8c7040;
-  --cream:           #f2ead8;
-  --cream-dim:       #a09278;
-  --muted:           #6b6055;
+  /* Semantic roles */
+  --bg:              var(--off-white);
+  --surface:         var(--white);
+  --surface-2:       var(--pink-pale);
+  --border:          #f0cede;
+  --border-light:    #f7dde9;
 
-  --sold-out-text:   #7a6e62;
-  --sold-out-line:   #4a4238;
+  --text-primary:    var(--plum);
+  --text-secondary:  var(--plum-mid);
+  --text-muted:      #a0708a;
 
-  --warn-bg:         #2a1800;
-  --warn-border:     #5c3000;
-  --warn-text:       #e09040;
+  --accent:          var(--pink);
+  --accent-bright:   var(--pink-dim);
+  --price-color:     var(--plum);
+
+  --sold-out-text:   #c09aac;
+  --sold-out-line:   #dbb0c6;
+
+  --warn-bg:         #fff0f5;
+  --warn-border:     var(--pink-dim);
+  --warn-text:       var(--plum);
 
   /* Typography */
   --font-display:    'Neutraface 2 Display', 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -58,7 +70,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   background: var(--bg);
-  color: var(--cream);
+  color: var(--text-primary);
   font-family: var(--font-ui);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -101,12 +113,10 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   display: flex;
   align-items: center;
   padding: 0 var(--pad-x);
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  background: var(--pink);
+  border-bottom: 2px solid var(--pink-dim);
   transition: top 0.35s ease;
-
-  /* Subtle top accent line */
-  box-shadow: inset 0 3px 0 0 var(--gold-dim);
+  box-shadow: 0 2px 12px rgba(92, 41, 70, 0.12);
 }
 
 .header-left {
@@ -120,17 +130,18 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3.2vh, 2.6rem);
   font-weight: 700;
-  color: var(--gold-bright);
+  color: var(--white);
   letter-spacing: 0.06em;
   line-height: 1;
   white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(92, 41, 70, 0.2);
 }
 
 .header-tagline {
   font-family: var(--font-ui);
   font-size: clamp(0.6rem, 1.2vh, 1rem);
-  font-weight: 300;
-  color: var(--cream-dim);
+  font-weight: 400;
+  color: rgba(255,255,255,0.75);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -138,9 +149,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .header-divider {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, var(--border-light), transparent);
+  background: linear-gradient(to right, rgba(255,255,255,0.4), transparent);
   margin: 0 var(--pad-x);
-  opacity: 0.6;
 }
 
 .header-right {
@@ -151,8 +161,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .header-location {
   font-family: var(--font-ui);
   font-size: clamp(0.75rem, 1.6vh, 1.2rem);
-  font-weight: 500;
-  color: var(--cream-dim);
+  font-weight: 600;
+  color: var(--white);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -193,8 +203,9 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  /* Top accent bar */
-  border-top: 2px solid var(--gold-dim);
+  box-shadow: 0 2px 8px rgba(92, 41, 70, 0.07);
+  /* Teal top accent bar */
+  border-top: 3px solid var(--teal);
 }
 
 .section-header {
@@ -207,8 +218,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-display);
   font-size: clamp(0.9rem, 1.9vh, 1.5rem);
   font-weight: 600;
-  color: var(--gold-bright);
-  letter-spacing: 0.06em;
+  color: var(--plum);
+  letter-spacing: 0.04em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -233,9 +244,9 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   width: 5.5vh;
   height: 5.5vh;
   object-fit: cover;
-  border-radius: 0.3vw;
-  border: 1px solid var(--border-light);
-  opacity: 0.9;
+  border-radius: 0.4vw;
+  border: 2px solid var(--border);
+  opacity: 1;
 }
 
 /* Text wrapper holds name + dots + price in a row */
@@ -261,7 +272,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-ui);
   font-size: clamp(0.8rem, 1.75vh, 1.35rem);
   font-weight: 400;
-  color: var(--cream);
+  color: var(--text-primary);
   line-height: 1.35;
   /* Allow wrapping but limit to 2 lines */
   display: -webkit-box;
@@ -276,7 +287,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   align-self: flex-end;
   width: 2.5vw;
   min-width: 1vw;
-  border-bottom: 1.5px dotted var(--border-light);
+  border-bottom: 1.5px dotted var(--border);
   margin-bottom: 0.28vh;
 }
 
@@ -284,8 +295,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .item-price {
   font-family: var(--font-ui);
   font-size: clamp(0.8rem, 1.75vh, 1.35rem);
-  font-weight: 500;
-  color: var(--gold);
+  font-weight: 600;
+  color: var(--pink-dim);
   white-space: nowrap;
 }
 
@@ -336,8 +347,8 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 .variation-name {
   font-family: var(--font-ui);
   font-size: clamp(0.7rem, 1.45vh, 1.1rem);
-  font-weight: 300;
-  color: var(--cream-dim);
+  font-weight: 400;
+  color: var(--text-secondary);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -347,17 +358,15 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   align-self: flex-end;
   width: 2vw;
   min-width: 0.5vw;
-  border-bottom: 1.5px dotted var(--border-light);
+  border-bottom: 1.5px dotted var(--border);
   margin-bottom: 0.2vh;
-  opacity: 0.5;
 }
 
 .variation-price {
   font-family: var(--font-ui);
   font-size: clamp(0.7rem, 1.45vh, 1.1rem);
-  font-weight: 400;
-  color: var(--gold);
-  opacity: 0.75;
+  font-weight: 500;
+  color: var(--pink-dim);
   white-space: nowrap;
 }
 
@@ -377,7 +386,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-display);
   font-style: italic;
   font-size: clamp(0.7rem, 1.4vh, 1rem);
-  color: var(--muted);
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -391,22 +400,22 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   align-items: center;
   justify-content: center;
   gap: 1.2vw;
-  background: var(--bg);
-  border-top: 1px solid var(--border);
+  background: var(--pink);
+  border-top: 2px solid var(--pink-dim);
   padding: 0 var(--pad-x);
 }
 
 .footer-location {
   font-family: var(--font-ui);
   font-size: clamp(0.55rem, 1.15vh, 0.9rem);
-  font-weight: 500;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--white);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .footer-sep {
-  color: var(--border-light);
+  color: rgba(255,255,255,0.5);
   font-size: 1.1vh;
 }
 
@@ -414,7 +423,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-ui);
   font-size: clamp(0.55rem, 1.15vh, 0.9rem);
   font-weight: 400;
-  color: var(--muted);
+  color: rgba(255,255,255,0.8);
 }
 
 /* ── Loading / error states ── */
@@ -429,7 +438,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   font-family: var(--font-display);
   font-style: italic;
   font-size: clamp(1rem, 2.2vh, 1.8rem);
-  color: var(--muted);
+  color: var(--text-muted);
   letter-spacing: 0.06em;
 }
 
