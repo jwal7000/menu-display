@@ -127,68 +127,35 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .header-left {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 0.8vw;
+  justify-content: flex-start;
+}
+
+.header-center {
   flex: 0 0 auto;
-  /* never let left side overflow or push into the divider */
-  min-width: 0;
-  overflow: hidden;
-}
-
-.header-logo {
-  /* Sized to match the cap-height of the wordmark — no taller than ~60% of header */
-  height: calc(var(--header-h) * 0.58);
-  width: auto;
-  display: block;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.header-text {
   display: flex;
-  flex-direction: column;
-  gap: 0.25vh;
-  min-width: 0;
-}
-
-.header-wordmark {
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2.4vh, 1.9rem);
-  font-weight: 700;
-  color: var(--plum);
-  letter-spacing: 0.04em;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.header-tagline {
-  font-family: var(--font-ui);
-  font-size: clamp(0.5rem, 0.95vh, 0.8rem);
-  font-weight: 400;
-  color: var(--plum-mid);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.header-divider {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, var(--border), transparent);
-  margin: 0 var(--pad-x);
+  align-items: center;
+  justify-content: center;
 }
 
 .header-right {
-  flex: 0 0 auto;
-  text-align: right;
+  flex: 1;
+}
+
+.header-logo {
+  height: calc(var(--header-h) * 0.78);
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .header-location {
   font-family: var(--font-display);
-  font-size: clamp(0.8rem, 2.2vh, 1.6rem);
+  font-size: clamp(0.8rem, 2vh, 1.4rem);
   font-weight: 600;
-  color: var(--pink);
+  color: var(--plum);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
