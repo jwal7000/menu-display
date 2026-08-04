@@ -1,8 +1,7 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-07-22T20:05:13.222Z",
-  "source_fetched_at": "2026-07-22T20:05:13.220Z",
+  "generated_at": "2026-08-04T14:40:34.627Z",
   "section_count": 2,
   "item_count": 11,
   "sections": [
@@ -13,37 +12,43 @@
           "item_id": "01001",
           "name": "Vanilla Cream",
           "image_url": "https://www.dropbox.com/s/4o583r65pyk0ib5/vanilla%20cream.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01002",
           "name": "The Purist",
           "image_url": "https://www.dropbox.com/s/2bxvijk55qerto6/purist.jpg?dl=0",
-          "price": "$4.75"
+          "price": "$4.75",
+          "sold_out": false
         },
         {
           "item_id": "01003",
           "name": "Chocolate Sea Salt",
           "image_url": "https://www.dropbox.com/s/px5webqh05kukxc/chocolate%20sea%20salt.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01004",
           "name": "Maple Glaze",
           "image_url": "https://www.dropbox.com/s/27vtwcy4ggee1om/maple%20glaze.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01005",
           "name": "King Kong",
           "image_url": "https://www.dropbox.com/s/em3bx20y9q4lnzg/king%20kong.jpg?dl=0",
-          "price": "$5.70"
+          "price": "$5.70",
+          "sold_out": false
         },
         {
           "item_id": "01006",
           "name": "Milk Chocolate Sprinkles",
           "image_url": "https://www.dropbox.com/s/xr1080ojw9tx6ji/milk%20chocolate%20sprinkles.jpg?dl=0",
-          "price": "$5.10"
+          "price": "$5.10",
+          "sold_out": false
         }
       ]
     },
@@ -54,30 +59,35 @@
           "item_id": "01035",
           "name": "Lemon Icebox",
           "image_url": "https://www.dropbox.com/s/a1d5t7txbuacuj1/lemon%20icebox.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01084",
           "name": "Cherry Cheesecake",
           "image_url": "https://www.dropbox.com/s/5c0qzma15en1lms/cherrycheesecake.JPG?dl=0",
-          "price": "$5.70"
+          "price": "$5.70",
+          "sold_out": false
         },
         {
           "item_id": "01010",
           "name": "Cinnamon Cream Cheese",
           "image_url": "https://www.dropbox.com/s/jb0om3ytmw6931p/cinnamon%20cream%20cheese.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01234",
           "name": "Affogato",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         },
         {
           "item_id": "01017",
           "name": "Samoa",
           "image_url": "https://www.dropbox.com/s/3laa372jmbjaeqd/samoa.jpg?dl=0",
-          "price": "$5.35"
+          "price": "$5.35",
+          "sold_out": false
         }
       ]
     }
