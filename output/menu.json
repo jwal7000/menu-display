@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-04T18:02:07.121Z",
-  "section_count": 4,
-  "item_count": 24,
+  "generated_at": "2026-08-04T18:12:11.854Z",
+  "section_count": 5,
+  "item_count": 26,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -188,6 +188,21 @@
           "name": "Samoa",
           "image_url": "https://www.dropbox.com/scl/fi/wg6xe2q4a9i9c8a9y7pyv/samoa.JPG?rlkey=281m3lgk4beukzg1eh2fj86m2&dl=0",
           "price": "$3.50",
+          "sold_out": false
+        }
+      ]
+    },
+    {
+      "name": "Rolls",
+      "items": [
+        {
+          "item_id": "17001",
+          "name": "Cinnamon Cream Cheese",
+          "sold_out": false
+        },
+        {
+          "item_id": "17002",
+          "name": "Cinnamon Glaze",
           "sold_out": false
         }
       ]
