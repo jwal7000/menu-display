@@ -7,7 +7,7 @@
  */
 
 import * as dotenv from "dotenv";
-import { Client, Environment } from "square";
+import { SquareClient as Client, SquareEnvironment as Environment } from "square";
 import { writeFileSync, mkdirSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
@@ -29,21 +29,15 @@ const env = process.env.SQUARE_ENVIRONMENT === "sandbox"
   : Environment.Production;
 
 const client = new Client({
-  accessToken: process.env.SQUARE_ACCESS_TOKEN,
+  token: process.env.SQUARE_ACCESS_TOKEN,
   environment: env,
 });
 
 async function main() {
   console.log(`🔗  Connecting to Square (${process.env.SQUARE_ENVIRONMENT ?? "production"})...`);
 
-  const response = await client.locationsApi.listLocations();
-
-  if (response.errors && response.errors.length > 0) {
-    console.error("❌  Square API errors:", JSON.stringify(response.errors, null, 2));
-    process.exit(1);
-  }
-
-  const locations = response.result.locations ?? [];
+  const response = await client.locations.list();
+  const locations = response.locations ?? [];
   console.log(`✅  Found ${locations.length} location(s).`);
 
   // Sanitize: strip any fields that contain sensitive/internal data we don't need

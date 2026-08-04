@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "AX2YMJVN8QJ7C",
+    "name": "12th South",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1110 Caruthers Ave",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37204-2413",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-490-6554",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1259735,
+      "longitude": -86.7887628
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LAVCKWDFKTS4J",
+    "name": "12th South - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1110 Caruthers Ave",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37204-2413",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-490-6554",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1259735,
+      "longitude": -86.7887628
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L862ACB6EPKVT",
+    "name": "5th & Broad",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "5036 Broadway Pl",
+      "addressLine2": "Ste C-213",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37203",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-997-6993",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1605528,
+      "longitude": -86.7797272
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L12T8BES8FV6E",
+    "name": "5th & Broad - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "5036 Broadway Pl Ste C-213",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37203-5766",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-997-6993",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1605528,
+      "longitude": -86.7797272
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LCEVX3XQTM8WP",
+    "name": "Avalon",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "200 Avalon Blvd Ste 200",
+      "locality": "Alpharetta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30009-2440",
+      "country": "US"
+    },
+    "timezone": "America/New_York",
+    "phone_number": "+1 770-652-2878",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 34.0707998,
+      "longitude": -84.2771717
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LGZGKC8XNFXM0",
+    "name": "Avalon - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "200 Avalon Blvd Ste 200",
+      "locality": "Alpharetta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30009-2440",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 770-652-2878",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 34.0707998,
+      "longitude": -84.2771717
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "FXG8HKPA0CFDV",
+    "name": "East",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1900 Eastland Ave",
+      "addressLine2": "Ste 101",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37206",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-891-1293",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1817366,
+      "longitude": -86.7354687
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LN5GSRDYZHZVZ",
+    "name": "East - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1900 Eastland Ave Ste 101",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37206-2554",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-933-9332",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.18194,
+      "longitude": -86.7354919
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "377K564QMH1CG",
+    "name": "Five Daughters Bakery",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "230 Franklin Rd Ste 11J",
+      "locality": "Franklin",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37064-2270",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-490-6554",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "22:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "22:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.9321165,
+      "longitude": -86.8603448
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "CCTVVYENSYPTK",
+    "name": "Harpeth Kitchen",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1108 Harpeth Industrial Ct",
+      "locality": "Franklin",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37064",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-472-8668",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "17:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "17:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "17:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "17:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "17:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.933695,
+      "longitude": -86.859982
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "KT6WPWXNTSBB8",
+    "name": "L&L Market",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "3820 Charlotte Ave Ste 128",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37209-3896",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-457-2961",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1529893,
+      "longitude": -86.8324549
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LJNGWX8T41B20",
+    "name": "L&L Market - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "3820 Charlotte Ave Ste 128",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37209-3896",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-457-2961",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.1529893,
+      "longitude": -86.8324549
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L3VJ4QYD3NCPK",
+    "name": "Ponce City Market",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "675 Ponce De Leon Ave NE",
+      "locality": "Atlanta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30308-1829",
+      "country": "US"
+    },
+    "timezone": "America/New_York",
+    "phone_number": "+1 404-963-1922",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "21:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "21:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 33.7719027,
+      "longitude": -84.3668766
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L5BC6XWG9A0HD",
+    "name": "Ponce City Market - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "675 Ponce De Leon Ave NE",
+      "locality": "Atlanta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30308-1829",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 404-963-1922",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 33.7720675,
+      "longitude": -84.365377
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "ECE7YC9G73NXK",
+    "name": "The Factory",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "230 Franklin Rd Ste 11V",
+      "locality": "Franklin",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37064-2256",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-933-9332",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.9324572,
+      "longitude": -86.86068259999999
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LMANA7MRSSR5P",
+    "name": "The Factory - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "230 Franklin Rd Ste 11V",
+      "locality": "Franklin",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37064-2256",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-933-9332",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.9324572,
+      "longitude": -86.86068259999999
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LFCKHR2CKGE9X",
+    "name": "The Fountains",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1500 Medical Center Pkwy Ste 1H",
+      "locality": "Murfreesboro",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37129-3837",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-983-1413",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "16:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "16:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.8612108,
+      "longitude": -86.417042
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LYS06HGJX3J8X",
+    "name": "The Fountains - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1500 Medical Center Pkwy Ste 1H",
+      "locality": "Murfreesboro",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37129-3837",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-983-1413",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 35.8612108,
+      "longitude": -86.417042
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L4CQJADFVPZC9",
+    "name": "The Gulch",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "602 12th Ave S",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37203-6614",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-997-6990",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.151487,
+      "longitude": -86.783964
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "LWHM54RZW89ZF",
+    "name": "The Gulch - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "602 12th Ave S",
+      "locality": "Nashville",
+      "administrativeDistrictLevel1": "TN",
+      "postalCode": "37203-6614",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 615-997-6990",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 36.15152260000001,
+      "longitude": -86.78402229999999
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L1ZBPSYJ6T2Y3",
+    "name": "Westside Provisions",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1170 Howell Mill Rd NW Ste 100",
+      "locality": "Atlanta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30318-8636",
+      "country": "US"
+    },
+    "timezone": "America/New_York",
+    "phone_number": "+1 404-343-0326",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "09:00:00",
+          "endLocalTime": "18:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 33.7857937,
+      "longitude": -84.4116643
+    },
+    "country": "US",
+    "currency": "USD"
+  },
+  {
+    "id": "L8JXENG7HPE1K",
+    "name": "Westside Provisions - Preorder",
+    "status": "ACTIVE",
+    "address": {
+      "addressLine1": "1170 Howell Mill Rd NW Ste 100",
+      "locality": "Atlanta",
+      "administrativeDistrictLevel1": "GA",
+      "postalCode": "30318-8636",
+      "country": "US"
+    },
+    "timezone": "America/Chicago",
+    "phone_number": "+1 404-343-0326",
+    "business_hours": {
+      "periods": [
+        {
+          "dayOfWeek": "SUN",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "MON",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "TUE",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "WED",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "THU",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "18:00:00"
+        },
+        {
+          "dayOfWeek": "FRI",
+          "startLocalTime": "07:00:00",
+          "endLocalTime": "20:00:00"
+        },
+        {
+          "dayOfWeek": "SAT",
+          "startLocalTime": "08:00:00",
+          "endLocalTime": "20:00:00"
+        }
+      ]
+    },
+    "coordinates": {
+      "latitude": 33.7856195,
+      "longitude": -84.411693
+    },
+    "country": "US",
+    "currency": "USD"
+  }
+]

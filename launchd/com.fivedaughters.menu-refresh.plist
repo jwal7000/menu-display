@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.fivedaughters.menu-refresh</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/openclaw-user/.openclaw/workspace/square-digital-menu-poc/scripts/refresh-menu.sh</string>
+    </array>
+
+    <!-- Run every 10 minutes -->
+    <key>StartInterval</key>
+    <integer>600</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/openclaw-user/.openclaw/workspace/square-digital-menu-poc/logs/launchd.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/openclaw-user/.openclaw/workspace/square-digital-menu-poc/logs/launchd-error.log</string>
+
+    <key>KeepAlive</key>
+    <false/>
+</dict>
+</plist>
