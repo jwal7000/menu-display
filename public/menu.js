@@ -60,9 +60,15 @@
    */
   function resolveImageUrl(url) {
     if (!url) return null;
-    // Dropbox shared link → direct image
     if (url.includes("dropbox.com")) {
-      return url.replace(/[?&]dl=0/, "").replace(/[?&]st=[^&]*/, "").split("?")[0] + "?raw=1";
+      // Parse existing query params, keep rlkey (required for /scl/fi/ links), drop dl and st
+      const [base, query] = url.split("?");
+      const params = new URLSearchParams(query || "");
+      params.delete("dl");
+      params.delete("st");
+      params.set("raw", "1");
+      const qs = params.toString();
+      return base + (qs ? "?" + qs : "");
     }
     return url;
   }
