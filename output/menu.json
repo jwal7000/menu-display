@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-04T18:22:16.920Z",
-  "section_count": 5,
-  "item_count": 28,
+  "generated_at": "2026-08-04T18:32:21.769Z",
+  "section_count": 6,
+  "item_count": 32,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -79,6 +79,7 @@
         {
           "item_id": "01234",
           "name": "Affogato",
+          "image_url": "https://www.dropbox.com/scl/fi/svrewttq7tfeyfin9c6gv/affogato.png?rlkey=dn3laiwd9mw7tbfn4f2gjijrz&st=neo0cuml&dl=0",
           "price": "$5.35",
           "sold_out": false
         },
@@ -221,6 +222,39 @@
           "name": "Blueberry Lemon Roll",
           "image_url": "https://www.dropbox.com/scl/fi/33s0b2mlz354sgee23mnz/blueberry-lemon-roll.jpg?rlkey=6ummg5zblmwjb7268rugusprb&st=dvtpezph&dl=0",
           "price": "$7.00",
+          "sold_out": false
+        }
+      ]
+    },
+    {
+      "name": "Pastries",
+      "items": [
+        {
+          "item_id": "06001",
+          "name": "Chocolate Chip Cookie",
+          "image_url": "https://www.dropbox.com/s/76kayr5jbrzez62/chocolate%20chip%20cookie.jpg?dl=0",
+          "price": "$3.50",
+          "sold_out": false
+        },
+        {
+          "item_id": "06002",
+          "name": "Snowcap Cookie",
+          "image_url": "https://www.dropbox.com/s/h2c6cpvvm5w5g4v/snowcap%20cookie.jpg?dl=0",
+          "price": "$3.50",
+          "sold_out": false
+        },
+        {
+          "item_id": "06003",
+          "name": "My Sister's Sugar Cookie",
+          "image_url": "https://www.dropbox.com/s/zzl5rmb7e8km8l9/sugar%20cookie.jpg?dl=0",
+          "price": "$3.50",
+          "sold_out": false
+        },
+        {
+          "item_id": "05005",
+          "name": "Donut Holes (8 ct)",
+          "image_url": "https://www.dropbox.com/scl/fi/ooysw0e6uq1m1ia2fbgo9/donutholes-new.JPG?rlkey=cm0rrrwshri7lxni612ot6cgq&dl=0",
+          "price": "$4.70",
           "sold_out": false
         }
       ]
