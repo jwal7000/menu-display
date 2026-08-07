@@ -186,7 +186,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 /* ── Promo sidebar ── */
 .promo-panel {
-  flex: 0 0 26vw;
+  flex: 0 0 32.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
