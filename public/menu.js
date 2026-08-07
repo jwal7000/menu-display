@@ -243,9 +243,24 @@
       return;
     }
 
-    // Swap in the new grid (avoids flash — build off-DOM first)
+    // Build left content area
+    const content = document.createElement("div");
+    content.className = "menu-content";
+    content.appendChild(grid);
+
+    // Build right promo sidebar
+    const promo = document.createElement("div");
+    promo.className = "promo-panel";
+    const promoImg = document.createElement("img");
+    promoImg.className = "promo-img";
+    promoImg.src = resolveImageUrl("https://www.dropbox.com/scl/fi/modq3pm7airl65plkvdke/Box-Design_Grid.png?rlkey=85dmgz570cu19a57v6w2qcf4a&dl=0");
+    promoImg.alt = "Build Your Own Box";
+    promo.appendChild(promoImg);
+
+    // Swap in (avoids flash — build off-DOM first)
     menuRoot.innerHTML = "";
-    menuRoot.appendChild(grid);
+    menuRoot.appendChild(content);
+    menuRoot.appendChild(promo);
   }
 
   // ── Data fetching ─────────────────────────────────────────────────────────

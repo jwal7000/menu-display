@@ -167,14 +167,39 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   left: 0;
   right: 0;
   bottom: var(--footer-h);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: top 0.35s ease;
+}
+
+/* ── Menu content (left, scrollable) ── */
+.menu-content {
+  flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
   padding: var(--pad-y) var(--pad-x);
-  transition: top 0.35s ease;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.menu-root::-webkit-scrollbar { display: none; }
+.menu-content::-webkit-scrollbar { display: none; }
+
+/* ── Promo sidebar ── */
+.promo-panel {
+  flex: 0 0 26vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pad-y) var(--pad-x) var(--pad-y) 0;
+  overflow: hidden;
+}
+
+.promo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
 
 /* ── Sections grid ── */
 /*
