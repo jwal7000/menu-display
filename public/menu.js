@@ -225,8 +225,28 @@
 
     const sections = data.sections ?? [];
     let renderedCount = 0;
+    const skipIdx = new Set();
 
-    for (const section of sections) {
+    for (let i = 0; i < sections.length; i++) {
+      if (skipIdx.has(i)) continue;
+
+      const section = sections[i];
+
+      // Stack Paleo directly below Rolls in one grid cell
+      if (section.name === "Rolls") {
+        const paleoIdx = sections.findIndex((s, j) => j > i && s.name === "Paleo");
+        if (paleoIdx !== -1) {
+          const stack = document.createElement("div");
+          stack.className = "section-stack";
+          stack.appendChild(buildSectionCard(section));
+          stack.appendChild(buildSectionCard(sections[paleoIdx]));
+          grid.appendChild(stack);
+          skipIdx.add(paleoIdx);
+          renderedCount++;
+          continue;
+        }
+      }
+
       const card = buildSectionCard(section);
       if (card) {
         grid.appendChild(card);
@@ -253,7 +273,7 @@
     promo.className = "promo-panel";
     const promoImg = document.createElement("img");
     promoImg.className = "promo-img";
-    promoImg.src = resolveImageUrl("https://www.dropbox.com/scl/fi/modq3pm7airl65plkvdke/Box-Design_Grid.png?rlkey=85dmgz570cu19a57v6w2qcf4a&dl=0");
+    promoImg.src = resolveImageUrl("https://www.dropbox.com/scl/fi/7jomjwnpcaedyyxfh2vpn/Box-Design_Vertical.png?rlkey=sfx0dbr7r8tbgcvouik319926&dl=0");
     promoImg.alt = "Build Your Own Box";
     promo.appendChild(promoImg);
 

@@ -201,6 +201,13 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   border-radius: var(--radius);
 }
 
+/* ── Section stack (e.g. Rolls + Paleo in one column) ── */
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
 /* ── Sections grid ── */
 /*
   Auto-fill columns: each column is at least 22vw wide.
