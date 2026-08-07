@@ -1,9 +1,9 @@
 {
   "location_id": "12th South",
   "location_name": "12th South",
-  "generated_at": "2026-08-07T14:29:18.086Z",
-  "section_count": 6,
-  "item_count": 32,
+  "generated_at": "2026-08-07T14:39:23.361Z",
+  "section_count": 7,
+  "item_count": 33,
   "sections": [
     {
       "name": "Hundred Layer Donuts - Staple Flavors",
@@ -255,6 +255,16 @@
           "name": "Donut Holes (8 ct)",
           "image_url": "https://www.dropbox.com/scl/fi/ooysw0e6uq1m1ia2fbgo9/donutholes-new.JPG?rlkey=cm0rrrwshri7lxni612ot6cgq&dl=0",
           "price": "$4.70",
+          "sold_out": false
+        }
+      ]
+    },
+    {
+      "name": "Paleo",
+      "items": [
+        {
+          "item_id": "04001",
+          "name": "Chocolate Chip Sea Salt",
           "sold_out": false
         }
       ]
