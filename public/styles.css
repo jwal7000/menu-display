@@ -184,7 +184,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: var(--pad-y) var(--pad-x);
+  padding: var(--pad-y) 0 var(--pad-y) var(--pad-x);
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
