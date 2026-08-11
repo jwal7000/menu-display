@@ -302,7 +302,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 /* Item name — clamp long names to 2 lines max */
 .item-name {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.8rem, 1.75vh, 1.35rem);
   font-weight: 400;
   color: var(--text-primary);
@@ -326,7 +326,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 /* Price */
 .item-price {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.8rem, 1.75vh, 1.35rem);
   font-weight: 600;
   color: var(--pink-dim);
@@ -335,7 +335,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 
 /* Sold Out label */
 .item-sold-out-label {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.6rem, 1.25vh, 0.95rem);
   font-weight: 600;
   color: var(--sold-out-text);
@@ -378,7 +378,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .variation-name {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.7rem, 1.45vh, 1.1rem);
   font-weight: 400;
   color: var(--text-secondary);
@@ -396,7 +396,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .variation-price {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.7rem, 1.45vh, 1.1rem);
   font-weight: 500;
   color: var(--pink-dim);
@@ -404,7 +404,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .variation-sold-out-label {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.55rem, 1.1vh, 0.85rem);
   font-weight: 600;
   color: var(--sold-out-text);
@@ -439,7 +439,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .footer-location {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.55rem, 1.15vh, 0.9rem);
   font-weight: 600;
   color: var(--white);
@@ -453,7 +453,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 }
 
 .footer-updated {
-  font-family: var(--font-ui);
+  font-family: var(--font-display);
   font-size: clamp(0.55rem, 1.15vh, 0.9rem);
   font-weight: 400;
   color: rgba(255,255,255,0.8);
