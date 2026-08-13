@@ -179,16 +179,12 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
   transition: top 0.35s ease;
 }
 
-/* ── Menu content (left, scrollable) ── */
+/* ── Menu content (no-scroll — TV display) ── */
 .menu-content {
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: var(--pad-y) 0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
-.menu-content::-webkit-scrollbar { display: none; }
 
 /* ── Promo sidebar ── */
 .promo-panel {
@@ -224,7 +220,7 @@ body.has-warning .menu-root { top: calc(var(--header-h) + var(--warn-h)); }
 */
 .sections-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22vw, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   align-items: start;
   animation: fadeUp 0.45s ease both;
