@@ -6,6 +6,19 @@
 
 ---
 
+## 2026-08-13 — Session with Gabe
+
+### `8f8e023` — Force 3-column grid; remove scroll for TV display
+Problem: `auto-fill` columns at `22vw` min only fit 2 columns in the 64vw content area, producing 3 rows that overflowed the viewport and required scrolling — unusable on a static TV.
+
+Fix:
+- `.sections-grid` changed from `repeat(auto-fill, minmax(22vw, 1fr))` → `repeat(3, 1fr)` — forces 3 columns, dropping layout to 2 rows
+- `.menu-content` changed from `overflow-y: auto` → `overflow: hidden` — scroll fully disabled; content clips if it ever exceeds the viewport
+
+With current 7 sections (Rolls + Paleo stacked = 6 grid cells), the 3×2 layout fits comfortably within the available `~84vh` of menu area.
+
+---
+
 ## 2026-08-11 — Session with Gabe
 
 ### `94da05a` — All menu text switched to Neutraface
